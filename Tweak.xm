@@ -35,7 +35,9 @@ enableReturn=YES;
 //NSLog(@"EnableDSReturn : Tapped %@", key);
 	if ([key isEqualToString:@"return-key"] && enableReturn) {
 //スペースがないと送信になる。多分入力内容に@"/n"で完全一致検索かけてんのかな。故に同時にそれ以外の文字が含まれてればいけるってワケ。
-[[%c(UIKeyboardImpl) sharedInstance] addInputString:@" \n"];
+[[%c(UIKeyboardImpl) sharedInstance] addInputString:@"\n "];
+//handleと何が違うんだ
+[[%c(UIKeyboardImpl) sharedInstance] performDelete];
 //  NSLog(@"EnableDSReturn : Inserted return");
 [self clearAllTouchInfo];
 	}

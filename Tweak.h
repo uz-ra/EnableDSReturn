@@ -6,11 +6,6 @@
 #import <sys/utsname.h>
 #import <rootless.h>
 
-
-@interface NSConcreteNotification : NSNotification
-@end
-
-
 @interface UIKeyboardLayoutStar
 -(id)keyHitTest:(CGPoint)test;
 -(void)addInputString:(NSString*)string;
@@ -19,4 +14,6 @@
 @end
 @interface UIKeyBoardImpl
 +(id)sharedInstance;
+-(void)handleDelete;
+-(void)performDelete;
 @end

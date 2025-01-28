@@ -1,7 +1,7 @@
 Package: jp.uzra.enabledsreturn
 Name: EnableDSReturn
 Depends: mobilesubstrate
-Version: 1.1
+Version: 1.2
 Architecture: iphoneos-arm
 Description: Enable return on DeepSeek iOS app
 Maintainer: uz.ra
