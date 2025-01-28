@@ -15,6 +15,7 @@
 -(id)keyHitTest:(CGPoint)test;
 -(void)addInputString:(NSString*)string;
 -(void)addReturn;
+-(void)clearAllTouchInfo;
 @end
 @interface UIKeyBoardImpl
 +(id)sharedInstance;
