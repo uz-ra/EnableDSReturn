@@ -1,0 +1,9 @@
+Package: jp.uzra.enabledsreturn
+Name: EnableDSReturn
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Change "Send" on the keyboard of DeepSeek to "Return"
+Maintainer: uz.ra
+Author: uz.ra
+Section: Tweaks
