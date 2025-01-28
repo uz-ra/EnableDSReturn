@@ -32,11 +32,11 @@ enableReturn=YES;
 
 - (void)touchUp:(UITouch *)touch {
 	NSString* key = [[[self keyHitTest:[touch locationInView:touch.view]] name] lowercaseString];
-NSLog(@"EnableDSReturn : Tapped %@", key);
+//NSLog(@"EnableDSReturn : Tapped %@", key);
 	if ([key isEqualToString:@"return-key"] && enableReturn) {
 //スペースがないと送信になる。多分入力内容に@"/n"で完全一致検索かけてんのかな。故に同時にそれ以外の文字が含まれてればいけるってワケ。
 [[%c(UIKeyboardImpl) sharedInstance] addInputString:@" \n"];
-  NSLog(@"EnableDSReturn : Inserted return");
+//  NSLog(@"EnableDSReturn : Inserted return");
 [self clearAllTouchInfo];
 	}
 else{
